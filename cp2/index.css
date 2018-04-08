@@ -1,0 +1,101 @@
+/*
+Name: Nao Okada #1773084
+Date: 04.8.18
+Section: CSE 154 AJ
+
+This is the index.css style sheet. 
+This is used in the index.html page for a webpage explaining 
+Tsushima which is a beautiful island in Japan.
+*/
+
+body, html, main {
+    height: 100%;
+    width:100%;
+    font-family: 'Josefin Slab', serif;
+}
+
+h1:not(#header-sentence), p:not(#footer-sentence) {
+    color: white;
+}
+
+p {
+  font-size: 15pt;
+}
+
+main p {
+  padding: calc(50% - 1em) 20px 0px 20px;
+  word-wrap: break-word;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.head-background1 > h1 {
+  border: solid 3px white;
+}
+
+#top-heading {
+  font-size: 45pt;
+}
+  
+.head-background {
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
+}
+
+.head-background h1 {
+  margin: auto;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 35pt;
+}
+  
+.head-background1{
+  background-image: url("img/sea.jpg");
+}
+
+.head-background2{
+  background-image: url("img/forest.jpg");
+}
+
+.head-background3{
+  background-image: url("img/city.jpg");
+}
+  
+.content-background {
+  min-height: 100%;
+  background-color: rgba(104, 159, 201, 0.8);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.flex > img {
+  padding-top: calc(50vh - 150px);
+  max-height: 300px;
+  padding-left: 20px;
+}
+
+.flex p {
+  display: block;
+  width: calc(100% - 384px);
+  min-width: 200px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+}
+
+#footer-sentence {
+  color: gray;
+}
